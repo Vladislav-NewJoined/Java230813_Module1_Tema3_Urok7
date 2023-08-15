@@ -30,16 +30,6 @@ public class Task1_3_7_3 {
         System.out.println("\nРеализуем метод getMinValue: \nМинимальное значение массива: " + min);
     }
 
-    private static int getMinValue(ArrayList<Integer> arr, int n) {
-        int min = arr.get(0);
-        for (int i = 1; i < n; i++) {
-            if (arr.get(i) < min) {
-                min = arr.get(i);
-            }
-        }
-        return min;
-    }
-
     private static ArrayList<Integer> getArrayList() {
         ArrayList<Integer> arr = new ArrayList<>();
         arr.add(10);
@@ -65,5 +55,15 @@ public class Task1_3_7_3 {
             }
         }
         return max;
+    }
+
+    private static int getMinValue(ArrayList<Integer> arr, int n) {
+        int min = arr.get(0);
+        for (int i = 1; i < n; i++) {
+            if (arr.get(i) < min) {
+                min = arr.get(i);
+            }
+        }
+        return min;
     }
 }
